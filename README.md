@@ -1,7 +1,5 @@
 # ClientSide-File-Validation
-Client-side file signature validation can be done to ensure that the uploaded file matches the expected file type based on its initial bytes or magic number. This is an additional layer of client-side validation to help users select the correct file type. However, it should not be considered a foolproof security measure, as it can still be manipulated by malicious users. Server-side validation remains crucial for security.
-
-Here's how you can implement client-side file signature validation using JavaScript:
+Client-side file signature validation can be done to ensure that the uploaded file matches the expected file type based on its initial bytes or magic number. This is an additional layer of client-side validation to help users select the correct file type. 
 
 1. **Get the File Signature**:
    - Define the expected file signatures (magic numbers) for the file types you want to validate. These are typically the first few bytes of the file that identify its type.
@@ -9,6 +7,7 @@ Here's how you can implement client-side file signature validation using JavaScr
 
 2. **Read the Initial Bytes**:
    - When a file is selected using an `<input type="file">` element, you can read the initial bytes of the file using the `FileReader` API.
+     
 
    ```javascript
    const fileInput = document.getElementById('file-input');
